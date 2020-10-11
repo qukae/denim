@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    padding: 0 10%;
+    ul {
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 50px 50px;
+      column-gap: 0;
+      justify-items: center;
+    }
+
+    &__item {
+      grid-row: 2;
+      justify-content: center;
+      align-self: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 10px;
+      padding: 10px;
+    }
+    .title-item{
+      grid-row: 1;
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    &__link{
+      margin: 0 20px;
+    }
+  }
+}

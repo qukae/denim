@@ -1,3 +1,6 @@
+.section-fall {
+  margin-bottom: 20%;
+}
 .section-fall__ads {
   background: $clr-gray-light;
   margin-left: 5%;
@@ -19,11 +22,6 @@
     width: 110%;
     height: 110%;
     z-index: -1;
-  }
-  .section__title {
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
   }
 }
 .section-fall__img {

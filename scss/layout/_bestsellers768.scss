@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  .view-all_768 {
+    display: inline;
+    margin: 0;
+    margin-right: 5%;
+  }
+  .view-all_320 {
+    display: none;
+  }
+  .section__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

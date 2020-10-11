@@ -4,8 +4,8 @@
                        "nav-wrap"
                        "img"
                        "info";
-  grid-template-columns: minmax(320px, 1024px) ;
-  grid-template-rows: 60px  60px minmax(350px, .8fr) 350px;
+  grid-template-columns: minmax(320px, 1366px) ;
+  grid-template-rows: 60px  90px minmax(350px, .8fr) 350px;
   background-color: $clr-gray-light;
   margin-bottom: 15%;
 
@@ -33,7 +33,7 @@
   grid-area: nav-wrap;
   display: flex;
   justify-content: space-between;
-  margin: 0 15px 60px;
+  margin: 0 15px 40px;
   padding-top: 60px ;
   align-self: center;
 
@@ -88,3 +88,9 @@
     opacity: .8;
   }
 }
+
+.s-links, .arrow {
+  display: none ;
+}
+
+
