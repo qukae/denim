@@ -1,0 +1,31 @@
+.section-fall__ads {
+  background: $clr-gray-light;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url(/images/dg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    margin-right: -5%;
+    margin-left: -5%;
+    margin-top: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+  }
+  .section__title {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+.section-fall__img {
+  width: 100%;
+}

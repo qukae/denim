@@ -1,0 +1,35 @@
+footer {
+  background: $clr-blue-dark;
+  padding-bottom: 5%;
+
+  .title {
+    background: $clr-blue-dark;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.footer-nav {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 50px);
+    column-gap: 40px;
+  }
+
+  &__item {
+    align-self: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+.social {
+  &__link{
+    margin-left: 40px;
+  }
+}

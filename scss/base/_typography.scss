@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: $ff-body;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $clr-black;
+  font-weight: $fw-normal;
+  letter-spacing: normal;
+}
+.title, .section__title {
+  font-weight: $fw-bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-weight: $fw-light;
+  font-size: 18px;
+  color: $clr-gray;
+}
+.footer-nav_link {
+  font-size: 18px;
+}
