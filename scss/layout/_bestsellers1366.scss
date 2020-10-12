@@ -1,0 +1,9 @@
+@media screen and (min-width: 1366px) {
+  .section-bestsellers{
+    margin-bottom: 10%;
+  }
+  .cards-wrap {
+    flex-wrap: nowrap;
+    column-gap: 3%;
+  }
+}

@@ -5,8 +5,7 @@
                          "info img"
                          "s-links s-links"
                          ;
-    grid-template-columns: minmax(320px, 1024px) minmax(320px, 1024px) ;
-    grid-template-rows: 60px  60px minmax(350px, .8fr) 60px;
+     grid-template-rows: 60px  60px minmax(350px, .8fr) 60px;
     }
   .title-wrap {
     grid-area: title;
@@ -15,6 +14,7 @@
     background: #fff;
     margin-top: 0;
     }
+
   .info {
     grid-area: info;
   }

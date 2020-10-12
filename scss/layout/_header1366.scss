@@ -1,0 +1,49 @@
+@media screen and (min-width: 1366px) {
+  .header {
+    grid-template-areas:"title title title title"
+                        "left info img right";
+    grid-template-columns: 1fr minmax(320px, 450px) minmax(320px, 450px) .8fr;
+    grid-template-rows: 60px  1fr;
+    }
+  .header__nav {
+    grid-area: left;
+    align-self: flex-start;
+    margin-left: 20%;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    &-item {
+      margin-bottom: 25%;
+    }
+  }
+  .s-links{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: left;
+    margin-bottom: 25%;
+    margin-left: 20%;
+  }
+  .header__btns-wrap {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: left;
+    margin-left: 35%;
+    margin-top: 25%;
+    grid-area: right;
+
+    button {
+      margin-bottom: 50%;
+    }
+  }
+  .arrow {
+    grid-area: left;
+    display: flex;
+    align-self: flex-end;
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+}

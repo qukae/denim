@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@;400;500;800&display=swap");
 body {
-  margin: 0;
+  max-width: 1366px;
+  margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -76,9 +77,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0 15px 40px;
   padding-top: 60px;
   -ms-flex-item-align: center;
@@ -94,17 +92,30 @@ body {
   padding: 0;
 }
 
-.header__nav button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 .header__nav-link {
   letter-spacing: 1px;
   color: #151C22;
   text-decoration: none;
   padding-right: 25px;
+}
+
+.header__btns-wrap {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav-wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.header__btns-wrap button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .info {
@@ -294,8 +305,6 @@ footer a {
 @media screen and (min-width: 768px) {
   .header {
         grid-template-areas: "title title" "nav-wrap nav-wrap" "info img" "s-links s-links";
-    -ms-grid-columns: minmax(320px, 1024px) minmax(320px, 1024px);
-        grid-template-columns: minmax(320px, 1024px) minmax(320px, 1024px);
     -ms-grid-rows: 60px 60px minmax(350px, 0.8fr) 60px;
         grid-template-rows: 60px 60px minmax(350px, 0.8fr) 60px;
   }
@@ -464,6 +473,109 @@ footer a {
   }
   .social__link {
     margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+        grid-template-areas: "title title title title" "left info img right";
+    -ms-grid-columns: 1fr minmax(320px, 450px) minmax(320px, 450px) 0.8fr;
+        grid-template-columns: 1fr minmax(320px, 450px) minmax(320px, 450px) 0.8fr;
+    -ms-grid-rows: 60px  1fr;
+        grid-template-rows: 60px  1fr;
+  }
+  .header__nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 20%;
+  }
+  .header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav-item {
+    margin-bottom: 25%;
+  }
+  .s-links {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    justify-self: left;
+    margin-bottom: 25%;
+    margin-left: 20%;
+  }
+  .header__btns-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    justify-self: left;
+    margin-left: 35%;
+    margin-top: 25%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: right;
+  }
+  .header__btns-wrap button {
+    margin-bottom: 50%;
+  }
+  .arrow {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-bestsellers {
+    margin-bottom: 10%;
+  }
+  .cards-wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-fall {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .footer-nav {
+    padding: 0 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
